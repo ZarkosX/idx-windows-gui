@@ -126,8 +126,8 @@
         -drive file="$RAW_DISK",format=qcow2,if=none,id=vdisk \
         -device virtio-blk-pci,drive=vdisk \
         \
-        -drive file="$WIN_ISO",media=cdrom,if=virtio,id=cd1 \
-        -drive file="$VIRTIO_ISO",media=cdrom,if=virtio,id=cd2 \
+        -drive file="$WIN_ISO",media=cdrom,if=none,id=cd1 \
+        -drive file="$VIRTIO_ISO",media=cdrom,if=none,id=cd2 \
         \
         -boot menu=on,order=cd \
         \
