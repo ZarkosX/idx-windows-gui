@@ -179,7 +179,7 @@
         ];
       };
       terminal = {
-        manager = "terminal";
+        manager = "web";
         command = [ "bash" ];
       };
     };
